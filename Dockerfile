@@ -88,6 +88,11 @@ cd /home/nginx-php/php-$PHP_VERSION && \
 --with-iconv \
 --with-zlib \
 --with-gettext \
+--with-gd \
+--with-freetype \
+--with-png \
+--with-jpeg \
+--with-zlib \
 --with-curl \
 --with-xmlrpc \
 --with-mhash \
@@ -154,7 +159,7 @@ RUN chown -R www:www ${NGX_WWW_ROOT} && \
 chmod +x /entrypoint.sh
 
 # Set port
-EXPOSE 80 443
+EXPOSE 80
 
 # CMD ["/usr/local/php/sbin/php-fpm", "-F", "daemon off;"]
 # CMD ["/usr/local/nginx/sbin/nginx", "-g", "daemon off;"]
