@@ -88,11 +88,12 @@ cd /home/nginx-php/php-$PHP_VERSION && \
 --with-iconv \
 --with-zlib \
 --with-gettext \
---with-gd \
+--enable-gd \
 --with-freetype \
 --with-png \
 --with-jpeg \
 --with-zlib \
+--with-webp \
 --with-curl \
 --with-xmlrpc \
 --with-mhash \
