@@ -1,5 +1,4 @@
 FROM centos:8
-LABEL maintainer="Skiy Chan <dev@skiy.net>"
 
 ENV NGINX_VERSION 1.19.4
 ENV PHP_VERSION 7.4.12
@@ -93,7 +92,6 @@ cd /home/nginx-php/php-$PHP_VERSION && \
 --with-png \
 --with-jpeg \
 --with-zlib \
---with-webp \
 --with-curl \
 --with-xmlrpc \
 --with-mhash \
